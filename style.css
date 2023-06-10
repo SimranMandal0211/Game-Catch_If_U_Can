@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color:azure;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: plum;
+    box-shadow: 2px 2px 5px white;
+    /* border-radius: 100%; */
+    animation: move 1s ease-in-out infinite forwards;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+@keyframes move{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
